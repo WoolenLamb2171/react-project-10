@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddItem = (props: any) => {
   return (
-    <form className="px-4 py-3" onSubmit={props.onSubmitButton}>
+    <form className="px-4 w-48 py-3" onSubmit={props.onSubmitButton}>
       <div className="py-3 flex flex-col">
         <label htmlFor="itemName">Название товар:</label>
         <input
@@ -11,7 +11,7 @@ const AddItem = (props: any) => {
           type="text"
           id="itemName"
           placeholder="Название товара"
-          className="border rounded "
+          className="border px-2 rounded"
         />
       </div>
       <div className="py-3 flex flex-col">
@@ -22,7 +22,7 @@ const AddItem = (props: any) => {
           id="discription"
           type="text"
           placeholder="Описание товара"
-          className="border rounded "
+          className="border px-2 rounded"
         />
       </div>
       <div className="py-3 px-4">

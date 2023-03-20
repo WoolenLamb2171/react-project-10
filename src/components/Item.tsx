@@ -20,21 +20,22 @@ export default function Item(props: any) {
   }
 
   return (
-    <div className="item ">
+    <div className="py-3 px-4">
       <div className="item-info">
         <h2 className="item-title">{info.name}</h2>
         <p className="item-desc">{info.desc}</p>
       </div>
-      <div className="item-quantity">
+      <div className='flex'>   
         <button
-          className="item-button"
-          disabled={total === 0}
-          onClick={handleRemoveClick}
+        className="border px-2"
+        disabled={total === 0}
+        onClick={handleRemoveClick}
         >
           -
         </button>
-        <h3 className="item-total">{total ? total : ''}</h3>
-        <button className="item-button" onClick={handleAddClick}>
+
+        <h3 className="px-1">{total ? total : ''}</h3>
+        <button className="border px-2" onClick={handleAddClick}>
           +
         </button>
       </div>
